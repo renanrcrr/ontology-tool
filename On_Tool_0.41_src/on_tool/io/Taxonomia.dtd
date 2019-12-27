@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary indentification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/Taxonomia.dtd
+
+--><!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE taxonomia SYSTEM "Taxonomia.dtd">
+
+    <taxonomia>
+    ...
+    </taxonomia>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT frase (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT desc (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT supertipo (desc? , (frase+ | supertipo+ ) )>
+<!ATTLIST supertipo
+    valor CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT taxonomia (supertipo)+>
+<!ATTLIST taxonomia
+    versao CDATA #IMPLIED
+  >

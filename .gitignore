@@ -1,0 +1,27 @@
+# All classes
+*.class
+
+# Mobile Tools
+.mtj.tmp/
+
+# Package files and libraries such as jgraph
+*.jar
+*.war
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Theses files
+.classpath
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Log files
+.log
+
+
+
